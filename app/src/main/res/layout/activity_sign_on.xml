@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SignOnActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center" android:id="@+id/signInLayout">
+        <Button
+                android:text="@string/sign_in_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signInBtn" android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_gravity="clip_horizontal|clip_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center" android:id="@+id/signOutLayout">
+        <Button
+                android:text="@string/sign_out_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signOutBtn" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:visibility="invisible"/>
+    </LinearLayout>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/userInfoLayout"
+            android:stretchColumns="1" android:visibility="invisible">
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userInfoTableLabel"
+                    android:textColor="#f00"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_id_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_id"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_name_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_name"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_given_name_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_given_name"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_family_name_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_family_name"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_link_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:id="@+id/user_link"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_picture_label"
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
+                    android:layout_column="1"
+                    android:id="@+id/user_picture"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:contentDescription="@string/user_info_picture_desc"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_gender_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_gender"/>
+        </TableRow>
+
+        <TableRow
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+            <TextView
+                    android:text="@string/user_info_locale_label"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/user_locale"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

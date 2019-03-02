@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GSignOn</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="sign_out_btn">Sign Out</string>
+    <string name="permission_error">Enable all permissions</string>
+    <string name="userInfoTableLabel">User Info</string>
+    <string name="user_info_id_label">Id</string>
+    <string name="user_info_name_label">Name</string>
+    <string name="user_info_given_name_label">Given Name</string>
+    <string name="user_info_family_name_label">Family Name</string>
+    <string name="user_info_link_label">Link</string>
+    <string name="user_info_picture_label">Picture</string>
+    <string name="user_info_gender_label">Male</string>
+    <string name="user_info_locale_label">Locale</string>
+    <string name="user_info_picture_desc">User profile picture</string>
+</resources>
